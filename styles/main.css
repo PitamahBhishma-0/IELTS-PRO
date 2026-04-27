@@ -1220,6 +1220,10 @@ body {
     border-color: var(--color-danger);
 }
 
+.toast--warning {
+    border-color: var(--color-warning);
+}
+
 /* ============================================
    Responsive Design
    ============================================ */

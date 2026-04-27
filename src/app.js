@@ -20,7 +20,9 @@ const state = {
     timer: {
         interval: null,
         running: false,
-        remaining: 20 * 60 // 20 minutes for Task 1
+        remaining: 20 * 60, // 20 minutes for Task 1
+        total: 20 * 60, // Total time for current task
+        hasWarned: false // Track if we've warned about low time
     },
     history: [],
     currentView: 'practice',
@@ -1250,6 +1252,8 @@ function handleTaskSelection(e) {
 
     // Update timer and target words
     state.timer.remaining = task === 1 ? 20 * 60 : 40 * 60;
+    state.timer.total = task === 1 ? 20 * 60 : 40 * 60;
+    state.timer.hasWarned = false;
     elements.targetWords.textContent = task === 1 ? '150' : '250';
 
     // Reset timer
@@ -1279,12 +1283,26 @@ function startTimer() {
     state.timer.running = true;
     elements.startTimerBtn.disabled = true;
 
+    // Enable answer area
+    elements.answerArea.disabled = false;
+    elements.answerArea.placeholder = 'Start writing your answer here...';
+
     state.timer.interval = setInterval(() => {
         state.timer.remaining--;
         updateTimerDisplay();
 
+        // Check for 85% remaining warning
+        const warningThreshold = Math.floor(state.timer.total * 0.15); // 15% remaining = 85% used
+        if (state.timer.remaining === warningThreshold && !state.timer.hasWarned) {
+            state.timer.hasWarned = true;
+            showToast('Warning: Only 15% time remaining!', 'warning');
+        }
+
         if (state.timer.remaining <= 0) {
             stopTimer();
+            // Disable answer area
+            elements.answerArea.disabled = true;
+            elements.answerArea.placeholder = 'Time is up! You can no longer edit your answer.';
             showModal('Time\'s Up!', 'Your time has expired. Please review your answer and submit for analysis.');
         }
     }, 1000);
@@ -1299,6 +1317,13 @@ function stopTimer() {
 function resetTimer() {
     stopTimer();
     state.timer.remaining = state.currentTask === 1 ? 20 * 60 : 40 * 60;
+    state.timer.total = state.currentTask === 1 ? 20 * 60 : 40 * 60;
+    state.timer.hasWarned = false;
+
+    // Re-enable answer area
+    elements.answerArea.disabled = false;
+    elements.answerArea.placeholder = 'Start writing your answer here...';
+
     updateTimerDisplay();
 }
 

@@ -5,10 +5,7 @@
   "main": "index.html",
   "type": "module",
   "scripts": {
-    "dev": "npx serve . -p 8080",
-    "build": "echo 'Build complete - ready for deployment'",
-    "lint": "echo 'Linting complete'",
-    "test": "echo 'Tests complete'"
+    "dev": "npx serve . -p 8080"
   },
   "keywords": [
     "ielts",
@@ -18,8 +15,5 @@
     "education"
   ],
   "author": "IELTS Writing Pro",
-  "license": "MIT",
-  "devDependencies": {
-    "serve": "^14.2.0"
-  }
+  "license": "MIT"
 }

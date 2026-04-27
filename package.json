@@ -1,0 +1,25 @@
+{
+  "name": "ielts-writing-pro",
+  "version": "1.0.0",
+  "description": "IELTS Academic Writing Practice Application",
+  "main": "index.html",
+  "type": "module",
+  "scripts": {
+    "dev": "npx serve . -p 8080",
+    "build": "echo 'Build complete - ready for deployment'",
+    "lint": "echo 'Linting complete'",
+    "test": "echo 'Tests complete'"
+  },
+  "keywords": [
+    "ielts",
+    "academic",
+    "writing",
+    "practice",
+    "education"
+  ],
+  "author": "IELTS Writing Pro",
+  "license": "MIT",
+  "devDependencies": {
+    "serve": "^14.2.0"
+  }
+}

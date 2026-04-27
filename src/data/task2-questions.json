@@ -1,0 +1,634 @@
+{
+  "questions": [
+    {
+      "category": "Social Issues",
+      "question": "Some people think that strict punishments for driving offenses are the only way to reduce traffic accidents. To what extent do you agree or disagree?",
+      "type": "Opinion Essay"
+    },
+    {
+      "category": "Education",
+      "question": "Some people think that universities should provide graduates with the knowledge and skills needed in the workplace. Others argue that university should focus on academic knowledge regardless of its use in the workplace. Discuss both views and give your own opinion.",
+      "type": "Discussion Essay"
+    },
+    {
+      "category": "Crime",
+      "question": "In many countries, the level of crime is increasing. What are the causes of this problem and what can be done to solve it?",
+      "type": "Problem/Solution"
+    },
+    {
+      "category": "Education",
+      "question": "Some people think that it is better to educate boys and girls in separate schools. Others, however, believe that mixed schools are better. Discuss the advantages and disadvantages of both approaches.",
+      "type": "Advantages/Disadvantages"
+    },
+    {
+      "category": "Work-Life Balance",
+      "question": "Many people work long hours, leaving very little time for leisure. Why is this happening? Is this a positive or negative development?",
+      "type": "Two-Part Question"
+    },
+    {
+      "category": "Leadership",
+      "question": "What do you think are the most important qualities of a good leader? How can these qualities be developed?",
+      "type": "Direct Question"
+    },
+    {
+      "category": "Education",
+      "question": "Some people believe that the best way to succeed in life is to have a university education. Others disagree and say that practical experience is more important. Discuss both views and give your own opinion.",
+      "type": "Opinion Essay"
+    },
+    {
+      "category": "Education",
+      "question": "Some people think that children should learn to play a musical instrument from a young age. Others believe that children should focus on academic subjects. Discuss both views and give your own opinion.",
+      "type": "Discussion Essay"
+    },
+    {
+      "category": "Environment",
+      "question": "In many cities, traffic congestion and pollution are major problems. What causes these problems and what measures can be taken to solve them?",
+      "type": "Problem/Solution"
+    },
+    {
+      "category": "Technology",
+      "question": "More and more people are working from home instead of going to the office. Discuss the advantages and disadvantages of working from home.",
+      "type": "Advantages/Disadvantages"
+    },
+    {
+      "category": "Technology",
+      "question": "Some people believe that artificial intelligence will bring more benefits than problems to humanity. To what extent do you agree or disagree?",
+      "type": "Opinion Essay"
+    },
+    {
+      "category": "Health",
+      "question": "Some people believe that the government should be responsible for healthcare, while others think individuals should pay for their own medical treatment. Discuss both views and give your own opinion.",
+      "type": "Discussion Essay"
+    },
+    {
+      "category": "Environment",
+      "question": "Plastic waste has become a global environmental crisis. What are the main causes of this problem and what solutions can be implemented?",
+      "type": "Problem/Solution"
+    },
+    {
+      "category": "Technology",
+      "question": "Social media has transformed how people communicate and interact. Discuss the advantages and disadvantages of this development.",
+      "type": "Advantages/Disadvantages"
+    },
+    {
+      "category": "Urbanization",
+      "question": "An increasing number of people are moving from rural areas to cities. Why is this trend occurring? What problems does it cause?",
+      "type": "Two-Part Question"
+    },
+    {
+      "category": "Education",
+      "question": "In many countries, it is mandatory for school children to wear uniforms. Do the advantages of this policy outweigh the disadvantages?",
+      "type": "Opinion Essay"
+    },
+    {
+      "category": "Sports",
+      "question": "Extreme sports such as skydiving and rock climbing are very dangerous and should be banned. To what extent do you agree or disagree with this view?",
+      "type": "Opinion Essay"
+    },
+    {
+      "category": "Technology",
+      "question": "These days more people put their personal information, such as names, addresses and telephone numbers, online for everyday activities such as socialising on social networks or banking purposes. Do you think it is a positive or negative development?",
+      "type": "Opinion Essay"
+    },
+    {
+      "category": "Housing",
+      "question": "With the growing population of cities, more and more people live in homes that have little or no outdoor area. Is this a positive or negative development?",
+      "type": "Opinion Essay"
+    },
+    {
+      "category": "Technology",
+      "question": "Earlier technology developments brought more benefits and changed the lives of ordinary people more than recent developments ever will. To what extent do you agree or disagree?",
+      "type": "Opinion Essay"
+    },
+    {
+      "category": "Health",
+      "question": "Fast food is a part of life in many places. Some people think this has bad effects on lifestyle and diets. Do you agree or disagree?",
+      "type": "Opinion Essay"
+    },
+    {
+      "category": "Environment",
+      "question": "Research has shown that the transportation of products and people are the main source of pollution. Some people believe the government should be in charge of this, while others believe it is the fault of individuals. Discuss both views and give your opinion.",
+      "type": "Discussion Essay"
+    },
+    {
+      "category": "Crime",
+      "question": "A portion of the human population believes that criminal behaviour has its roots in genes. Others think that circumstances lead people to commit crimes. Discuss your take on both views and put forward your opinions.",
+      "type": "Discussion Essay"
+    },
+    {
+      "category": "Housing",
+      "question": "Some people think the government should provide free housing, while others believe it is not the government's responsibility. Discuss both views and give your opinion.",
+      "type": "Discussion Essay"
+    },
+    {
+      "category": "Education",
+      "question": "Some people believe the purpose of education is to prepare individuals to be beneficial to society. Others say the purpose of education is to achieve personal ambitions. Discuss both views and give your own opinion.",
+      "type": "Discussion Essay"
+    },
+    {
+      "category": "Arts",
+      "question": "Some people think the government should support artists like painters, musicians, and poets, while others believe this wastes money. Discuss both views and give your own opinion.",
+      "type": "Discussion Essay"
+    },
+    {
+      "category": "Education",
+      "question": "It is believed that secondary school children should study international news as one of their school subjects. Others think that this is a waste of valuable school time. Discuss both views and give your opinions.",
+      "type": "Discussion Essay"
+    },
+    {
+      "category": "Environment",
+      "question": "In many countries, the number of animals and plants is declining. Why do you think this is happening? How can this issue be solved?",
+      "type": "Problem/Solution"
+    },
+    {
+      "category": "Technology",
+      "question": "Nowadays, most children prefer to spend several hours playing with electronic devices over doing more traditional leisure activities. What problem does this cause? What do you think are possible solutions?",
+      "type": "Problem/Solution"
+    },
+    {
+      "category": "Culture",
+      "question": "In some parts of the world, traditional festivals and celebrations have disappeared or are disappearing. Why is this happening? What measures could be taken to ensure they do not disappear?",
+      "type": "Problem/Solution"
+    },
+    {
+      "category": "Culture",
+      "question": "Many museums charge for admission while others are free. Do you think the advantages of charging people for admission outweigh the disadvantages?",
+      "type": "Advantages/Disadvantages"
+    },
+    {
+      "category": "Community Service",
+      "question": "It has been suggested that all young adults should be required to undertake a period of unpaid work helping people in the community. Would the drawbacks of such a requirement be greater than the benefits to the community and the individual young adults?",
+      "type": "Advantages/Disadvantages"
+    },
+    {
+      "category": "Economy",
+      "question": "Nowadays, most countries improve their living standards through economic development. However, some social values are lost as a result. Do you think the advantages of the phenomenon outweigh the disadvantages?",
+      "type": "Advantages/Disadvantages"
+    },
+    {
+      "category": "Transport",
+      "question": "In some countries the government promotes public transport as the primary means of transportation, and discourages private vehicle ownership. Do you think the advantages of this policy outweigh the disadvantages?",
+      "type": "Advantages/Disadvantages"
+    },
+    {
+      "category": "Personal Development",
+      "question": "Ambition is a positive quality for people to have in society today. How important is it for people who want to succeed in life? Is it a positive or negative characteristic?",
+      "type": "Two-Part Question"
+    },
+    {
+      "category": "Economy",
+      "question": "Nowadays online shopping is extremely popular. Discuss the impact of it on the environment and on people who lost their jobs because of it.",
+      "type": "Two-Part Question"
+    },
+    {
+      "category": "Finance",
+      "question": "Online currencies have become more common in recent years. Why is this? Is this a positive or negative development?",
+      "type": "Two-Part Question"
+    },
+    {
+      "category": "Housing",
+      "question": "A growing population is a big problem in developing countries. Should the government provide new homes in the cities or the countryside?",
+      "type": "Direct Question"
+    },
+    {
+      "category": "Health",
+      "question": "Nowadays there are many medical surveys of treatments to reduce health problems. Who should conduct them, governments, individuals or private companies, in your opinion?",
+      "type": "Direct Question"
+    },
+    {
+      "category": "Happiness",
+      "question": "Many people think that more having more money will make them happier. How important is money to happiness?",
+      "type": "Direct Question"
+    },
+    {
+      "category": "Education",
+      "question": "Does distant learning make it easier for students to balance their everyday lives?",
+      "type": "Direct Question"
+    },
+    {
+      "category": "Education",
+      "question": "Should there be a variety of learning methodologies implemented within the school learning curriculum?",
+      "type": "Direct Question"
+    },
+    {
+      "category": "Environment",
+      "question": "Environmental issues such as climate change have always been an international problem because governments are not imposing harsh punishments against offenders. To what extent do you agree or disagree? Support your answer with specific reasons and examples.",
+      "type": "Opinion Essay"
+    },
+    {
+      "category": "Environment",
+      "question": "Managing global environmental issues should be handled by one organization on a global scale. To what extent do you agree or disagree? Use specific reasons and examples to support your opinion.",
+      "type": "Opinion Essay"
+    },
+    {
+      "category": "Environment",
+      "question": "Many agricultural lands are being converted into commercial centres. How does this affect the environment and people's lifestyle? Discuss this situation and provide suggestions to address these issues. Support your answer with specific reasons and examples.",
+      "type": "Problem/Solution"
+    },
+    {
+      "category": "Environment",
+      "question": "Many efforts have been made by countries to address challenges concerning the environment but the situation has not improved. What are the possible reasons for environmental degradation? Are there any solutions to combat this problem? Support your answer with specific reasons and examples.",
+      "type": "Problem/Solution"
+    },
+    {
+      "category": "Environment",
+      "question": "Nowadays, it is possible to move ocean creatures from their natural habitat at sea and have them relocated to marine parks for the purpose of education and entertainment. Do you think the advantages of this development outweigh the disadvantages? Explain your reasons and support them with specific examples.",
+      "type": "Advantages/Disadvantages"
+    },
+    {
+      "category": "Environment",
+      "question": "The government should close companies that produce toxic waste materials without their own waste treatment facility in order to protect the environment. To what extent do you agree or disagree? Use specific reasons and examples to support your position.",
+      "type": "Opinion Essay"
+    },
+    {
+      "category": "Environment",
+      "question": "Many believe that companies behind oil and gas production promote new boundless opportunities while others fear the results from their intrusion in nature. Discuss possible reasons, results and solutions.",
+      "type": "Problem/Solution"
+    },
+    {
+      "category": "Environment",
+      "question": "Why do we need to prevent the extinction of animal life if the extinction of creatures like dinosaurs and dodos was caused by natural processes? What is your opinion about this?",
+      "type": "Direct Question"
+    },
+    {
+      "category": "Environment",
+      "question": "People produce more carbon emissions and garbage than in the past. Explain how it is affecting us and the measures that could be taken to address the situation. Provide specific examples and explanation to support your answer.",
+      "type": "Problem/Solution"
+    },
+    {
+      "category": "Environment",
+      "question": "In modern times, some species of animal life are slowly disappearing. Do you think that it is acceptable for species to become extinct? What are the possible reasons and consequences of this extinction? Provide reasons and examples to explain your opinion.",
+      "type": "Direct Question"
+    },
+    {
+      "category": "Environment",
+      "question": "Do you agree or disagree with the following statement? Protecting the Environment from air pollution is the responsibility of the government. Use specific reasons and examples to support your opinion.",
+      "type": "Opinion Essay"
+    },
+    {
+      "category": "Society",
+      "question": "Do you agree or disagree that the world was a better place decades ago than it is today? Why do you think so? Give specific details and examples to support your answer.",
+      "type": "Opinion Essay"
+    },
+    {
+      "category": "Technology",
+      "question": "Technological advancement has brought more harm than good? Use specific reasons and details to support your answer.",
+      "type": "Opinion Essay"
+    },
+    {
+      "category": "Education",
+      "question": "What technologies did you use to help you in your studies? Describe how it has helped you. Use specific reasons and details to support your answer.",
+      "type": "Direct Question"
+    },
+    {
+      "category": "Technology",
+      "question": "With the latest technological advancements, dating is now possible online. Would you recommend online dating for your single friends? What are the advantages and disadvantages of online dating? Site some examples to support your answer.",
+      "type": "Two-Part Question"
+    },
+    {
+      "category": "Technology",
+      "question": "All inventions and discoveries like the discovery of fire and electricity have impacts on our lives so much so that people can no longer live without them. To what extent do you agree or disagree?",
+      "type": "Opinion Essay"
+    },
+    {
+      "category": "Technology",
+      "question": "The internet has a bigger impact on people's lives because it is more popular than television. Do you agree or disagree? Use specific reasons and examples to support you position.",
+      "type": "Opinion Essay"
+    },
+    {
+      "category": "Technology",
+      "question": "Is it good for children to start using computers from an early age and spend long hours on it? Discuss the advantages and disadvantages. Explain your choice by using specific reasons and details.",
+      "type": "Advantages/Disadvantages"
+    },
+    {
+      "category": "Technology",
+      "question": "The internet and technology, like mobile phones and laptops, are connecting us to each other every hour of the day via networking sites and applications. Do you think it's an advantage or disadvantage? Explain your answer. Use specific reasons and details to support your answer.",
+      "type": "Advantages/Disadvantages"
+    },
+    {
+      "category": "Science",
+      "question": "Some companies spend a lot of money on scientific research and use animals for testing. Many argue that this is for a just cause while others say otherwise. Do the advantages of using animals in research outweigh its disadvantages?",
+      "type": "Advantages/Disadvantages"
+    },
+    {
+      "category": "Communication",
+      "question": "E-mail is now the easiest way to communicate with families and friends all over the world. Some people say that it does not have the sincerity of handwritten letters. Do you agree or disagree? Give specific details and examples to support your opinion.",
+      "type": "Opinion Essay"
+    },
+    {
+      "category": "Communication",
+      "question": "With the speed and ease of viral communication do you think it will totally replace papers and letters in their old form? If that happens, will it be for the better? Explain and provide specific reasons and examples to support your opinion.",
+      "type": "Two-Part Question"
+    },
+    {
+      "category": "Technology",
+      "question": "There are opinions that technology and science are beneficial but also destructive. Due to technological advancement, mankind has irrevocably ruined nature and environment and affected the climate. To what extent do you agree or disagree? Use specific reasons and examples to support your position.",
+      "type": "Opinion Essay"
+    },
+    {
+      "category": "Education",
+      "question": "In the future people will not need to have schools, galleries, museums or libraries because everything from education to culture and entertainment will be available online. Do you agree or disagree? Use specific reasons and examples to support your answer.",
+      "type": "Opinion Essay"
+    },
+    {
+      "category": "Education",
+      "question": "Being literate in technology or the internet is so popular that many believe that it will no longer be necessary to read conventional books as the main source of material for education. To what extent do you agree or disagree? Use specific reasons and examples to support your position.",
+      "type": "Opinion Essay"
+    },
+    {
+      "category": "Society",
+      "question": "Advancement in technology helps to improve the standard of life. Meanwhile, according to data, while the average change in society in developing countries is positive, in richer countries this can be exactly the opposite. To what extent do you agree or disagree with this?",
+      "type": "Opinion Essay"
+    },
+    {
+      "category": "Technology",
+      "question": "In the developed world, technological progress is increasing. What problems will this cause for individuals and society? Suggest some measures that could be taken to reduce the impact of radical technological advancements.",
+      "type": "Problem/Solution"
+    },
+    {
+      "category": "Technology",
+      "question": "At the present time, artificial intelligence of some technologies is advancing rapidly, especially in the driving sector. Do the advantages of this situation outweigh the disadvantages?",
+      "type": "Advantages/Disadvantages"
+    },
+    {
+      "category": "Education",
+      "question": "Some people think that a person improves intellectual skills better when doing group activities. To what extent do you agree? Use specific details and examples to explain your view.",
+      "type": "Opinion Essay"
+    },
+    {
+      "category": "Education",
+      "question": "Doing an enjoyable activity with a child can develop better skills and imagination than reading. To what extent do you agree? Use reasons and specific examples to explain your answer.",
+      "type": "Opinion Essay"
+    },
+    {
+      "category": "Education",
+      "question": "Cramming and immersion are becomingly increasingly recognised methods of gaining knowledge in an area, other people disagree and say that only through lifelong learning can a subject be learnt. To what extent do you agree or disagree? Use specific reasons and examples to support your position.",
+      "type": "Opinion Essay"
+    },
+    {
+      "category": "Education",
+      "question": "University students nowadays have too much freedom and do not study enough. To what extent do you agree and disagree? Explain your opinion, using specific reasons and examples.",
+      "type": "Opinion Essay"
+    },
+    {
+      "category": "Education",
+      "question": "Do you think it is better for students to work before their university studies? Why? Use reasons and specific examples to support your choice.",
+      "type": "Opinion Essay"
+    },
+    {
+      "category": "Education",
+      "question": "Nowadays computer education is compulsory for your learners in most schools. Do you think this is necessary or will children acquire these skills naturally from their daily interaction with technology everywhere? Provide your opinion and use specific reasons and examples to support your answer.",
+      "type": "Opinion Essay"
+    },
+    {
+      "category": "Education",
+      "question": "Compared to the past, more people are now studying abroad because it is more convenient and cheaper than before. Do you think this is beneficial to the foreign student's home country? Use specific reasons and examples to support your opinion.",
+      "type": "Opinion Essay"
+    },
+    {
+      "category": "Education",
+      "question": "Computers have become so advanced and interactive that students in the future will have no need for a human educator in the classroom. Do you agree? Why or why not? Use reasons and specific examples to explain your answer.",
+      "type": "Opinion Essay"
+    },
+    {
+      "category": "Health",
+      "question": "In some countries, health care and education are only partially funded by the government. Some people argue that the government should be responsible for covering the full cost of these services. Do you support or oppose the opinion? Explain your position.",
+      "type": "Opinion Essay"
+    },
+    {
+      "category": "Education",
+      "question": "The internet has become so efficient and popular that many people rely on it for learning. Some suggest that it could replace the use of books as the main source of knowledge for education. Do you support or oppose the opinion? Explain your position.",
+      "type": "Opinion Essay"
+    },
+    {
+      "category": "Education",
+      "question": "Do you think that education and training should be completely free or it is better to require fully paid tuition? Which way do you prefer? Use specific reasons and examples to support your answer.",
+      "type": "Opinion Essay"
+    },
+    {
+      "category": "Education",
+      "question": "Students should be completely free to choose whether to study or play games. They should be allowed to manage their own time. Do you agree or disagree? Use specific reasons and examples to support your position.",
+      "type": "Opinion Essay"
+    },
+    {
+      "category": "Education",
+      "question": "Some people think that real-life skills like cooking, housekeeping and gardening should be included in the curriculum as compulsory subjects. Do you agree or disagree? Explain your opinion, using specific reasons and details.",
+      "type": "Opinion Essay"
+    },
+    {
+      "category": "Education",
+      "question": "Childcare has always been of primary concern and importance. Do you think that courses designed to help mothers are necessary or can they acquire the essential knowledge through personal experience? Use specific reasons and examples to support your opinion.",
+      "type": "Opinion Essay"
+    },
+    {
+      "category": "Education",
+      "question": "Do you agree or disagree with the following statement? If students were given the choice between 'not to study' and 'study most of the time', they would choose 'not to study'. Use specific reasons and examples to support your opinion.",
+      "type": "Opinion Essay"
+    },
+    {
+      "category": "Education",
+      "question": "Many universities have introduced tests for evaluation rather than the old written exams based on lessons from books. What is your opinion? Use specific reasons and examples to support your answer.",
+      "type": "Opinion Essay"
+    },
+    {
+      "category": "Education",
+      "question": "Some people say that school education is not useful and the essence of study can be acquired at home. Do you agree? Why or why not? Use reasons and specific examples to explain your answer.",
+      "type": "Opinion Essay"
+    },
+    {
+      "category": "Education",
+      "question": "Students perform better in school when they are rewarded rather than punished. To what extent do you agree or disagree? Discuss both views and give your own opinion.",
+      "type": "Discussion Essay"
+    },
+    {
+      "category": "Education",
+      "question": "Some people think that schools have to be more entertaining, while others think that their sole purpose is to educate. Which do you agree with? Use specific reasons and examples to support your opinion.",
+      "type": "Discussion Essay"
+    },
+    {
+      "category": "Education",
+      "question": "Some people believe that children should do organised activities in their free time while others believe that children should be free to do what they want to do in their free time. Which viewpoint do you agree with? Use specific reasons and examples to support your answer.",
+      "type": "Discussion Essay"
+    },
+    {
+      "category": "Education",
+      "question": "Some people think that children should be homeschooled when they are very young while others think it is better for them to attend a kindergarten. Which do you think is better? Use specific reasons and examples to support your answer.",
+      "type": "Discussion Essay"
+    },
+    {
+      "category": "Education",
+      "question": "Tuition for healthy children usually has top priority in most countries. However, teaching students with disabilities or mental issues is more difficult and even more important to support and develop. Which viewpoint do you agree with? Use specific reasons and examples to support your answer.",
+      "type": "Discussion Essay"
+    },
+    {
+      "category": "Education",
+      "question": "Gaming is argued to have a bad influence on young children but some people think that it could have a positive effect on them as well. Which view do you agree with? Use reasons and specific examples to explain your answer.",
+      "type": "Discussion Essay"
+    },
+    {
+      "category": "Education",
+      "question": "School curriculum is selected by the central education authority rather than by the teachers, parents and students. Some believe that the latter should take part in the choice. Which viewpoint do you agree with? Use specific reasons and examples to support your answer.",
+      "type": "Discussion Essay"
+    },
+    {
+      "category": "Education",
+      "question": "In some countries, physical education is a compulsory subject for the leaving certificate. Some people suggest that this practice be abolished. Which view do you agree with? Explain your choice, using specific reasons and details.",
+      "type": "Discussion Essay"
+    },
+    {
+      "category": "Education",
+      "question": "Modern trends in early education focus on an array of practical school projects rather than developing traditional skills through maths, science and similar subjects. Which do you consider the better approach and why? Explain your choice, using specific reasons and details.",
+      "type": "Discussion Essay"
+    },
+    {
+      "category": "Education",
+      "question": "Things like puzzles, board games and pictures can contribute to a child's development. What would you give a child to help him/her develop and why? Give details and examples in your explanation.",
+      "type": "Direct Question"
+    },
+    {
+      "category": "Education",
+      "question": "Some students do very well at school and never have problems while others fall behind. Are they capable of handling this challenge themselves or should teachers and parents help them? Use specific reasons and details to support your answer.",
+      "type": "Direct Question"
+    },
+    {
+      "category": "Career",
+      "question": "What do you think is the best way to find a job: by gaining more knowledge and education or through more practical skills? Explain your choice, using specific reasons and details.",
+      "type": "Direct Question"
+    },
+    {
+      "category": "Education",
+      "question": "In recent years, online education is becoming more and more popular. What are the advantages and disadvantages of this phenomenon? Use specific details and examples to explain your opinion.",
+      "type": "Advantages/Disadvantages"
+    },
+    {
+      "category": "Arts",
+      "question": "Should the government support artists, such as, musicians, writers, and painters? Is it economically beneficial or is it just a waste of money? Why or why not?",
+      "type": "Two-Part Question"
+    },
+    {
+      "category": "Society",
+      "question": "Every person is essential to the development of a country. Talk about what you think is your role in the development of your country. Use specific reasons and examples in your explanation.",
+      "type": "Direct Question"
+    },
+    {
+      "category": "Economy",
+      "question": "Why do people from developing countries have a more positive outlook on economic growth than people from developed countries? Does economic growth really improve the standard of living? Explain and give specific reasons and details to support your answer.",
+      "type": "Two-Part Question"
+    },
+    {
+      "category": "Economy",
+      "question": "Countries should restrict foreign companies from opening offices and factories in order to protect local businesses. Do you agree or disagree?",
+      "type": "Opinion Essay"
+    },
+    {
+      "category": "Economy",
+      "question": "What is the developmental effect of people who prefer to shop in supermarkets to small shops or local markets? How does it affect the local economy? Give specific reasons and examples to support your answer.",
+      "type": "Two-Part Question"
+    },
+    {
+      "category": "Arts",
+      "question": "Do you agree or disagree that governments should spend money on other things than art even though art helps develop quality in people's life? Use specific reasons and examples to support your position.",
+      "type": "Opinion Essay"
+    },
+    {
+      "category": "Government",
+      "question": "Some countries focus on health care and education benefits while others on infrastructure and employment. Which do you think would be more beneficial for the population? Give specific details and examples to support your opinion.",
+      "type": "Opinion Essay"
+    },
+    {
+      "category": "Society",
+      "question": "Compare these views. Politicians have the greatest influence on the world. Scientists make the greatest contribution to the world. Which do you agree with? Use specific reasons and examples to support your position.",
+      "type": "Discussion Essay"
+    },
+    {
+      "category": "Crime",
+      "question": "How can one's government stop or prevent smuggling of illegal drugs from one country to another? Use specific reasons and examples to support your answer.",
+      "type": "Problem/Solution"
+    },
+    {
+      "category": "Crime",
+      "question": "In your own opinion, how can the government of each country eradicate or lessen the crimes committed by their own people? Use specific reasons and details to support your answer.",
+      "type": "Problem/Solution"
+    },
+    {
+      "category": "Government",
+      "question": "Some people think the government should focus on improving the economy of the country. Other people think the government should focus on social services such as health and education programs. Which statement do you agree with? Explain and provide examples to support your opinion.",
+      "type": "Discussion Essay"
+    },
+    {
+      "category": "Health",
+      "question": "In your own opinion, what do you think are the factors that contribute to longevity (living a long time)? List some examples and reasons to support your answer.",
+      "type": "Direct Question"
+    },
+    {
+      "category": "Health",
+      "question": "Some people think that keeping pets is good for children while others think it is dangerous and unhealthy. Which opinion do you agree with? Discuss both options and give examples.",
+      "type": "Discussion Essay"
+    },
+    {
+      "category": "Health",
+      "question": "Even when poor countries get help from rich countries, hunger is still an issue. Discuss probable causes and solutions. Support your answer with specific reasons and examples.",
+      "type": "Problem/Solution"
+    },
+    {
+      "category": "Health",
+      "question": "Compared to the past, more younger adults take medications for degenerative diseases. Provide specific reasons and examples to support your answer.",
+      "type": "Direct Question"
+    },
+    {
+      "category": "Food",
+      "question": "Today more countries import food from different parts of the world. Discuss the advantages and disadvantages of this trend. Provide specific reasons and examples to support your answer.",
+      "type": "Advantages/Disadvantages"
+    },
+    {
+      "category": "Society",
+      "question": "In some countries the population is ageing and the birth rate is declining. How will this affect society and how can it be prevented? Give specific reasons and examples to support your answer.",
+      "type": "Two-Part Question"
+    },
+    {
+      "category": "Health",
+      "question": "Some people say that it is better to promote healthy lifestyles and a healthy diet than spend so much money to treat obese people. To what extent do you agree or disagree? Use specific reasons and examples to support your position.",
+      "type": "Opinion Essay"
+    },
+    {
+      "category": "Society",
+      "question": "More people now have children later in life. Some think it is not a good development for the family and for the country. Compare these two views. Use specific reasons and examples to support your position.",
+      "type": "Discussion Essay"
+    },
+    {
+      "category": "Health",
+      "question": "Obesity is a serious problem in many countries, especially in rich countries. Discuss ways to solve the problem. Provide specific reasons and examples to support your answer.",
+      "type": "Problem/Solution"
+    },
+    {
+      "category": "Food",
+      "question": "More people are now trying out different varieties of food which results in the consumption of ingredients from different parts of the world. Do you think this is a positive or negative development? Provide specific reasons and examples to support your opinion.",
+      "type": "Opinion Essay"
+    },
+    {
+      "category": "Health",
+      "question": "In some countries, health care and health education are only partially funded by the government. Which do you think is better in terms of quality: free public healthcare and education or privately paid healthcare and education? Provide specific reasons and examples to support your position.",
+      "type": "Opinion Essay"
+    },
+    {
+      "category": "Society",
+      "question": "Do you think that an ageing society will disappear? What are the advantages and disadvantages of having more old people in society?",
+      "type": "Two-Part Question"
+    },
+    {
+      "category": "Society",
+      "question": "Which is better: to have children earlier or later in a woman's life? What are the possible reasons and effects of these two tendencies on a personal scale and for society in general? Support your answer with specific reasons and examples.",
+      "type": "Two-Part Question"
+    },
+    {
+      "category": "Health",
+      "question": "Some people, including medical workers, argue against using animals and humans for clinical tests while others think it is necessary. Which are you in favour of? Provide specific reasons and examples to support your opinion.",
+      "type": "Discussion Essay"
+    },
+    {
+      "category": "Food",
+      "question": "Many people think that home-cooked food is healthy, but many people still prefer eating out. Why is this so? How much does unhealthy food affect the public health of a country? Provide specific reasons and examples to support your opinion.",
+      "type": "Two-Part Question"
+    }
+  ]
+}

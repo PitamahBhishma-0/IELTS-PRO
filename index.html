@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="IELTS Writing Practice - Academic preparation tool">
+    <title>IELTS Writing Pro | Academic Preparation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+</head>
+<body>
+    <div id="app">
+        <!-- Header -->
+        <header class="header">
+            <div class="header__logo">
+                <span class="header__logo-icon">🎯</span>
+                <span class="header__logo-text">IELTS Writing Pro</span>
+                <span class="header__badge">Academic</span>
+            </div>
+            <nav class="header__nav">
+                <button class="nav-btn nav-btn--active" data-view="practice" aria-label="Practice mode">
+                    <span class="nav-btn__icon">✍️</span>
+                    <span class="nav-btn__text">Practice</span>
+                </button>
+                <button class="nav-btn" data-view="learning" aria-label="Learning mode">
+                    <span class="nav-btn__icon">📚</span>
+                    <span class="nav-btn__text">Learning</span>
+                </button>
+                <button class="nav-btn" data-view="history" aria-label="History mode">
+                    <span class="nav-btn__icon">📊</span>
+                    <span class="nav-btn__text">History</span>
+                </button>
+                <button class="nav-btn" id="settingsBtn" aria-label="Settings">
+                    <span class="nav-btn__icon">⚙️</span>
+                </button>
+            </nav>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main">
+            <!-- Practice View -->
+            <section class="view view--active" id="view-practice">
+                <!-- Task Selector -->
+                <div class="task-selector">
+                    <button class="task-card task-card--active" data-task="1">
+                        <div class="task-card__icon">📊</div>
+                        <h3 class="task-card__title">Task 1</h3>
+                        <p class="task-card__subtitle">Academic Writing</p>
+                        <div class="task-card__meta">
+                            <span>20 min</span>
+                            <span>150+ words</span>
+                        </div>
+                    </button>
+                    <button class="task-card" data-task="2">
+                        <div class="task-card__icon">📝</div>
+                        <h3 class="task-card__title">Task 2</h3>
+                        <p class="task-card__subtitle">Essay Writing</p>
+                        <div class="task-card__meta">
+                            <span>40 min</span>
+                            <span>250+ words</span>
+                        </div>
+                    </button>
+                </div>
+
+                <!-- Practice Area -->
+                <div class="practice-grid">
+                    <!-- Question Panel -->
+                    <div class="panel panel--question">
+                        <div class="panel__header">
+                            <h2 class="panel__title">Question</h2>
+                            <div class="timer" id="timer" aria-label="Timer">20:00</div>
+                        </div>
+
+                        <!-- Question Image (Task 1) -->
+                        <div class="question-image" id="questionImage" style="display: none;">
+                            <img id="questionImageEl" src="" alt="Question visual" loading="lazy">
+                            <div class="question-image__caption" id="questionImageCaption"></div>
+                        </div>
+
+                        <!-- Question Chart (Task 1) -->
+                        <div class="question-chart" id="questionChart" style="display: none;">
+                            <canvas id="questionChartCanvas"></canvas>
+                            <div class="question-chart__caption" id="questionChartCaption"></div>
+                        </div>
+
+                        <!-- Data Description (for maps, process diagrams) -->
+                        <div class="data-description" id="dataDescription" style="display: none;">
+                            <h4>Visual Information</h4>
+                            <pre id="dataDescriptionText"></pre>
+                        </div>
+
+                        <!-- Question Content -->
+                        <div class="question-content">
+                            <div class="question-badge" id="questionType" style="display: none;">Click "Generate Question"</div>
+                            <p class="question-text" id="questionText">Generate a question to begin your practice session.</p>
+                        </div>
+
+                        <!-- Question Controls -->
+                        <div class="panel__actions">
+                            <button class="btn btn--primary" id="generateBtn">
+                                <span class="btn__icon">🎲</span>
+                                <span>Generate Question</span>
+                            </button>
+                            <button class="btn btn--secondary" id="toggleQuestionTypeBtn" title="Toggle question type visibility">
+                                <span class="btn__icon">👁️</span>
+                                <span id="toggleQuestionTypeText">Show Type</span>
+                            </button>
+                            <button class="btn btn--secondary" id="startTimerBtn">
+                                <span class="btn__icon">⏱️</span>
+                                <span>Start Timer</span>
+                            </button>
+                            <button class="btn btn--danger" id="resetTimerBtn">
+                                <span class="btn__icon">🔄</span>
+                                <span>Reset</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Answer Panel -->
+                    <div class="panel panel--answer">
+                        <div class="panel__header">
+                            <h2 class="panel__title">Your Answer</h2>
+                            <div class="word-count" id="wordCountDisplay">
+                                <span class="word-count__current" id="wordCount">0</span>
+                                <span class="word-count__separator">/</span>
+                                <span class="word-count__target" id="targetWords">150</span>
+                                <span class="word-count__label">words</span>
+                            </div>
+                        </div>
+
+                        <textarea
+                            id="answerArea"
+                            class="answer-area"
+                            placeholder="Start writing your answer here..."
+                            aria-label="Your answer"
+                            spellcheck="true"
+                        ></textarea>
+
+                        <!-- Progress Bar -->
+                        <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar__fill" id="progressFill"></div>
+                        </div>
+
+                        <!-- Answer Controls -->
+                        <div class="panel__actions">
+                            <button class="btn btn--success" id="analyzeBtn">
+                                <span class="btn__icon">🔍</span>
+                                <span>Analyze Answer</span>
+                            </button>
+                            <button class="btn btn--secondary" id="toggleAnalysisBtn" title="Toggle between AI and Generic analysis">
+                                <span class="btn__icon">🤖</span>
+                                <span id="analysisModeText">AI Analysis</span>
+                            </button>
+                            <button class="btn btn--secondary" id="clearBtn">
+                                <span class="btn__icon">🗑️</span>
+                                <span>Clear</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Real-time Analysis Panel -->
+                <div class="analysis-panel" id="analysisPanel" style="display: none;">
+                    <div class="analysis-panel__header">
+                        <h2 class="analysis-panel__title">Analysis Results</h2>
+                        <div class="score-summary">
+                            <div class="score-summary__item">
+                                <span class="score-summary__value" id="overallScore">-</span>
+                                <span class="score-summary__label">Overall</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="analysis-panel__scores">
+                        <div class="score-card">
+                            <div class="score-card__label">Task Response</div>
+                            <div class="score-card__value" id="taskResponseScore">-</div>
+                            <div class="score-card__bar">
+                                <div class="score-card__bar-fill" id="taskResponseBar"></div>
+                            </div>
+                        </div>
+                        <div class="score-card">
+                            <div class="score-card__label">Coherence</div>
+                            <div class="score-card__value" id="coherenceScore">-</div>
+                            <div class="score-card__bar">
+                                <div class="score-card__bar-fill" id="coherenceBar"></div>
+                            </div>
+                        </div>
+                        <div class="score-card">
+                            <div class="score-card__label">Vocabulary</div>
+                            <div class="score-card__value" id="vocabularyScore">-</div>
+                            <div class="score-card__bar">
+                                <div class="score-card__bar-fill" id="vocabularyBar"></div>
+                            </div>
+                        </div>
+                        <div class="score-card">
+                            <div class="score-card__label">Grammar</div>
+                            <div class="score-card__value" id="grammarScore">-</div>
+                            <div class="score-card__bar">
+                                <div class="score-card__bar-fill" id="grammarBar"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="analysis-panel__feedback" id="analysisFeedback">
+                        <!-- Feedback content will be inserted here -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Learning View -->
+            <section class="view" id="view-learning">
+                <div class="learning-layout">
+                    <aside class="sidebar">
+                        <h3 class="sidebar__title">Contents</h3>
+                        <ul class="sidebar__menu" id="sidebarMenu">
+                            <!-- Menu items populated by JS -->
+                        </ul>
+                    </aside>
+                    <article class="content-area" id="contentArea">
+                        <h1>Welcome to Learning Mode</h1>
+                        <p>Select a topic from the sidebar to start learning.</p>
+                    </article>
+                </div>
+            </section>
+
+            <!-- History View -->
+            <section class="view" id="view-history">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-card__value" id="totalEssays">0</div>
+                        <div class="stat-card__label">Total Essays</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-card__value" id="avgScore">-</div>
+                        <div class="stat-card__label">Average Score</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-card__value" id="task1Count">0</div>
+                        <div class="stat-card__label">Task 1 Essays</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-card__value" id="task2Count">0</div>
+                        <div class="stat-card__label">Task 2 Essays</div>
+                    </div>
+                </div>
+                <h3 class="history__title">Recent Essays</h3>
+                <div class="history-list" id="historyList">
+                    <p class="history__empty">No essays yet. Start practicing!</p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal" id="modal" role="dialog" aria-modal="true" aria-hidden="true">
+        <div class="modal__backdrop"></div>
+        <div class="modal__content">
+            <h3 class="modal__title" id="modalTitle">Alert</h3>
+            <p class="modal__body" id="modalBody"></p>
+            <div class="modal__actions">
+                <button class="btn btn--secondary" id="modalCancel">Cancel</button>
+                <button class="btn btn--primary" id="modalConfirm">Confirm</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Settings Modal -->
+    <div class="modal" id="settingsModal" role="dialog" aria-modal="true" aria-hidden="true" >
+        <div class="modal__backdrop"></div>
+        <div class="modal__content modal__content--wide">
+            <h3 class="modal__title">AI Analysis Settings</h3>
+            <div class="settings-form">
+                <div class="form-group">
+                    <label for="providerSelect">AI Provider</label>
+                    <select id="providerSelect" class="form-control">
+                        <option value="claude">Claude (Anthropic)</option>
+                        <option value="openai">OpenAI (GPT-4)</option>
+                        <option value="gemini">Gemini (Google)</option>
+                        <option value="deepseek">DeepSeek</option>
+                        <option value="openrouter">OpenRouter (Multi-model)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="apiKeyInput">API Key</label>
+                    <div class="input-with-toggle">
+                        <input type="password" id="apiKeyInput" class="form-control" placeholder="Enter your API key">
+                        <button type="button" id="toggleKeyVisibility" class="btn-icon" aria-label="Toggle key visibility">👁️</button>
+                    </div>
+                </div>
+                <div class="provider-info" id="providerInfo">
+                    <h4>Provider Information</h4>
+                    <p id="providerDescription">Select a provider to see details.</p>
+                    <a id="providerLink" href="#" target="_blank" rel="noopener noreferrer">Get API Key →</a>
+                </div>
+            </div>
+            <div class="modal__actions">
+                <button class="btn btn--secondary" id="settingsCancel" >Cancel</button>
+                <button class="btn btn--primary" id="settingsSave">Save</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script type="module" src="src/app.js"></script>
+</body>
+</html>

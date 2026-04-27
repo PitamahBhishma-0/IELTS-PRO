@@ -1131,14 +1131,47 @@ function showToast(message, type = 'success') {
     toast.textContent = message;
     document.body.appendChild(toast);
 
+    // Play sound for warnings
+    if (type === 'warning') {
+        playWarningSound();
+    }
+
     setTimeout(() => {
         toast.classList.add('toast--show');
     }, 10);
 
+    // Longer duration for warnings (5 seconds vs 3 seconds)
+    const duration = type === 'warning' ? 5000 : 3000;
+
     setTimeout(() => {
         toast.classList.remove('toast--show');
         setTimeout(() => toast.remove(), 300);
-    }, 3000);
+    }, duration);
+}
+
+/**
+ * Play warning sound using Web Audio API
+ */
+function playWarningSound() {
+    try {
+        const audioContext = new (window.AudioContext || window.webkitAudioContext)();
+        const oscillator = audioContext.createOscillator();
+        const gainNode = audioContext.createGain();
+
+        oscillator.connect(gainNode);
+        gainNode.connect(audioContext.destination);
+
+        oscillator.frequency.value = 800; // 800 Hz tone
+        oscillator.type = 'sine';
+
+        gainNode.gain.setValueAtTime(0.3, audioContext.currentTime);
+        gainNode.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + 0.5);
+
+        oscillator.start(audioContext.currentTime);
+        oscillator.stop(audioContext.currentTime + 0.5);
+    } catch (error) {
+        console.error('Failed to play warning sound:', error);
+    }
 }
 
 // ============================================
@@ -1295,7 +1328,8 @@ function startTimer() {
         const warningThreshold = Math.floor(state.timer.total * 0.15); // 15% remaining = 85% used
         if (state.timer.remaining === warningThreshold && !state.timer.hasWarned) {
             state.timer.hasWarned = true;
-            showToast('Warning: Only 15% time remaining!', 'warning');
+            const percentageRemaining = Math.round((state.timer.remaining / state.timer.total) * 100);
+            showToast(`Warning: Only ${percentageRemaining}% time remaining!`, 'warning');
         }
 
         if (state.timer.remaining <= 0) {
